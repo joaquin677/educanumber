@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordena los números</title>
+
+    <link rel="stylesheet" href="css/juego.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Ordena los números 🔢</h1>
+
+        <div class="jugador">
+            <img id="avatarJugadorJuego1" alt="Avatar seleccionado">
+            <div class="datos-jugador">
+                <p id="nombreJugadorJuego1"></p>
+                <p class="mensaje-juego">¡Vamos a jugar con tu avatar!</p>
+            </div>
+        </div>
+
+        <p>Haz clic en los números del 1 al 10 en orden correcto</p>
+
+        <div id="numeros" class="numeros"></div>
+
+        <h2 id="mensaje"></h2>
+
+        <button onclick="siguiente()">Siguiente</button>
+
+    </div>
+
+    <script src="js/juego.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans', Arial, sans-serif;
+    background: radial-gradient(circle at top, #8eecff, #a7ff83);
+    min-height: 100vh;
+}
+
+.container{
+    text-align: center;
+    margin: 30px auto;
+    max-width: 840px;
+    padding: 24px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 28px;
+    box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+    border: 4px dashed #ff80ab;
+}
+
+h1 {
+    color: #8541f5;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.jugador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto 10px;
+    padding: 14px 16px;
+    background: linear-gradient(135deg, #ff9de2, #c5e4ff);
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(255, 105, 180, 0.18);
+    max-width: 520px;
+}
+
+.jugador img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.datos-jugador {
+    text-align: left;
+}
+
+.datos-jugador p {
+    margin: 0;
+}
+
+#nombreJugadorJuego1 {
+    font-size: 1.3rem;
+    color: #3b2e5a;
+    font-weight: 700;
+}
+
+.mensaje-juego {
+    color: #5b4c91;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.numeros{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.numero{
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #ff8a65, #ffcc80);
+    color: #3e2723;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(255,138,101,0.2);
+}
+
+.numero:hover{
+    transform: scale(1.08);
+}
+
+.numero.activo{
+    background: linear-gradient(135deg, #ff4081, #ffea00);
+    transform: scale(1.15);
+}
+
+button{
+    margin-top: 40px;
+    padding: 16px 42px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7c4dff, #40c4ff);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 18px rgba(64,196,255,0.25);
+    transition: 0.25s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+}

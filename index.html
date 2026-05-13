@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos para niños</title>
+
+    <link rel="stylesheet" href="css/estilo_inicio.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="img/logo principal.png" class="logo">
+
+    <h2>Bienvenido 👋</h2>
+    <p class="subtitulo">¡Vamos a jugar y aprender con tu avatar favorito!</p>
+
+    <input type="text" id="nombre"
+        placeholder="Ingresa tu nombre"
+        oninput="validar()">
+
+    <h3>Elige tu avatar</h3>
+
+    <div class="avatars">
+        <img src="img/avatar1.png" onclick="seleccionar(this)">
+        <img src="img/avatar2.png" onclick="seleccionar(this)">
+        <img src="img/avatar3.png" onclick="seleccionar(this)">
+        <img src="img/Captura de pantalla 2026-05-04 144529.png"
+        onclick="seleccionar(this)">
+    </div>
+
+    <div id="feedback" class="mensaje-voz" aria-live="polite"></div>
+
+    <button id="btn" type="button" onclick="ingresar()">
+        Ingresar
+    </button>
+
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

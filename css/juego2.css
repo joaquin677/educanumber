@@ -1,0 +1,79 @@
+    body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .contenedor{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    }
+
+    h1{
+    color: #333;
+    }
+
+    p{
+    color: #555;
+    }
+
+    #numeros{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    }
+
+    .numero{
+    width: 70px;
+    height: 70px;
+    background: #4facfe;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+    transition: 0.2s;
+    }
+
+    .numero:hover{
+    transform: scale(1.1);
+    }
+
+    button{
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+    #verificar{
+    background: #28a745;
+    color: white;
+    }
+
+    #reiniciar{
+    background: #ff9800;
+    color: white;
+    }
+
+    #mensaje{
+    margin-top: 20px;
+    color: #333;
+    }
