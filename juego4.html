@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla de Números</title>
+    <link rel="stylesheet" href="css/juego4.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div id="confetti-container" class="confetti-container"></div>
+
+    <div class="game-shell">
+        <!-- Panel de Perfil -->
+        <div class="player-panel">
+            <div class="player-avatar">🎮</div>
+            <div class="player-info">
+                <p class="player-name" id="player-name">Jugador</p>
+                <p class="player-subscore">Acumulado: <span id="player-accumulated">0</span> pts</p>
+            </div>
+        </div>
+
+        <header class="game-header">
+            <div class="top-row">
+                <div>
+                    <h1>⚡ Batalla de Números ⚡</h1>
+                    <p class="descripcion">¡Haz clic de MAYOR a MENOR! ¡Rápido!</p>
+                </div>
+                <div class="score-card">
+                    <div>Puntos: <span id="score">0</span></div>
+                    <div>Combo: <span id="combo">0</span>x</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Temporizador y Barra -->
+        <div class="timer-section">
+            <div class="timer-circle">
+                <svg viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="55" class="timer-bg"></circle>
+                    <circle cx="60" cy="60" r="55" class="timer-progress" id="timer-progress"></circle>
+                </svg>
+                <div class="timer-text"><span id="timer">20</span>s</div>
+            </div>
+        </div>
+
+        <div id="mensaje" class="mensaje">¡Comienza! 🚀</div>
+
+        <!-- Grid de Números -->
+        <div class="numeros-grid" id="numeros-grid"></div>
+
+        <!-- Indicador de Progreso -->
+        <div class="progress-section">
+            <p>Números por hacer: <span id="remaining">0</span></p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Botones Finales -->
+        <div class="game-footer">
+            <p id="estado" class="estado">¡Empieza a jugar!</p>
+            <div id="botones-finales" class="botones-finales" style="display: none;">
+                <button id="reiniciar" class="boton boton-reiniciar">🔄 Reiniciar</button>
+                <button id="siguiente" class="boton boton-siguiente">Siguiente →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/juego4.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Pares e Impares</title>
+    <link rel="stylesheet" href="css/juego3.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div id="confetti-container" class="confetti-container"></div>
+
+    <div class="game-shell">
+        <div class="player-panel">
+            <div class="player-card">
+                <div class="player-avatar"><img id="avatarJuego3" class="avatar-img" alt="Avatar"/></div>
+                <div class="player-info">
+                    <div id="nombreJugador" class="player-name">Jugador</div>
+                    <div id="puntajeTotal" class="player-subscore">Total acumulado: 0</div>
+                    <div id="puntajeJuego3" class="player-subscore">Puntos Juego 3: 0</div>
+                </div>
+            </div>
+        </div>
+        <header class="game-header">
+            <div class="top-row">
+                <div>
+                    <h1>🎮 Clasifica los números</h1>
+                    <p class="descripcion">Arrastra cada número a la canasta correcta: pares o impares.</p>
+                </div>
+                <div class="score-card">
+                    <div>Puntos: <span id="score">0</span></div>
+                    <div>Intentos: <span id="attempts">0</span></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="numeros" class="numeros"></div>
+
+        <div class="contenedor-canastas">
+            <div class="canasta" data-tipo="par">
+                <h2>🧺 Pares</h2>
+                <div class="contenido"></div>
+            </div>
+
+            <div class="canasta" data-tipo="impar">
+                <h2>🧺 Impares</h2>
+                <div class="contenido"></div>
+            </div>
+        </div>
+
+        <div class="game-footer">
+            <p id="mensaje" class="mensaje">¡Clasifica todos los números para ganar!</p>
+            <div id="botones-finales" class="botones-finales" style="display: none;">
+                <button id="reiniciar" class="boton boton-reiniciar">🔄 Reiniciar</button>
+                <button id="siguiente" class="boton boton-siguiente">Siguiente ➜</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/juego3.js"></script>
+</body>
+</html>

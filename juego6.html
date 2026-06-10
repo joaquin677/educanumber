@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Números 10.000</title>
+    <link rel="stylesheet" href="css/juego6.css">
+</head>
+<body>
+    <main class="app">
+        <header class="cabecera">
+            <h1>🎯 Misión Números 10.000</h1>
+            <div class="puntuacion-display" id="puntuacion">Puntos: 0</div>
+            <p class="subtitulo">Elige con atención y mira si acertaste.</p>
+        </header>
+
+
+        <section class="panel-pregunta">
+            <div class="pregunta" id="pregunta"></div>
+            <div class="ronda" id="ronda">Ronda 1</div>
+        </section>
+
+
+        <section id="tarjetas" class="tarjetas"></section>
+
+
+        <section class="controles">
+            <button id="btnRevisar">Comprobar</button>
+            <a href="puntuacion.html" class="btn-puntuacion" id="btnPuntuaciones" style="display:none;">📊 Ver Puntuaciones</a>
+        </section>
+
+
+        <div id="mensaje" class="mensaje"></div>
+    </main>
+    <div id="confetti"></div>
+    <script src="js/juego6.js"></script>
+</body>
+</html>
+
+

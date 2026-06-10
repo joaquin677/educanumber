@@ -2,7 +2,7 @@ body {
         margin: 0;
         min-height: 100vh;
         font-family: 'Comic Sans MS', 'Comic Sans', Arial, sans-serif;
-        background: radial-gradient(circle at top left, #ffd8c3, #ffaff0 35%, #ffed95 70%);
+        background: radial-gradient(circle at top left, #f6f3ff, #e7efff 40%, #f7f5ea 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,23 +15,23 @@ body {
         content: '';
         position: absolute;
         border-radius: 50%;
-        opacity: 0.4;
+        opacity: 0.18;
     }
 
     body::before {
-        width: 260px;
-        height: 260px;
-        background: #ff9cee;
-        top: -80px;
-        right: -80px;
+        width: 180px;
+        height: 180px;
+        background: #c8c4ff;
+        top: -60px;
+        right: -60px;
     }
 
     body::after {
-        width: 220px;
-        height: 220px;
-        background: #fff16c;
-        bottom: -80px;
-        left: -80px;
+        width: 160px;
+        height: 160px;
+        background: #fff5c2;
+        bottom: -60px;
+        left: -60px;
     }
 
     .container {
@@ -132,6 +132,25 @@ body {
     button:hover:not(:disabled) {
         transform: translateY(-2px);
         background: linear-gradient(135deg, #ff4dc5, #4dc9ff);
+    }
+
+    button.animando {
+        animation: ingresar-accion 0.4s ease;
+    }
+
+    @keyframes ingresar-accion {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 10px 22px rgba(96, 45, 150, 0.18);
+        }
+        50% {
+            transform: scale(1.06);
+            box-shadow: 0 14px 28px rgba(96, 45, 150, 0.22);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 10px 22px rgba(96, 45, 150, 0.18);
+        }
     }
 
     .mensaje-voz {

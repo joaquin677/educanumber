@@ -4,35 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordena los números</title>
-
+    <title>Juego divertido</title>
     <link rel="stylesheet" href="css/juego.css">
+    <link rel="icon" href="img/icono.png" type="image/png">
 </head>
 
 <body>
 
+    <div class="fondo-divertido"></div>
+
     <div class="container">
 
-        <h1>Ordena los números 🔢</h1>
-
-        <div class="jugador">
-            <img id="avatarJugadorJuego1" alt="Avatar seleccionado">
-            <div class="datos-jugador">
-                <p id="nombreJugadorJuego1"></p>
-                <p class="mensaje-juego">¡Vamos a jugar con tu avatar!</p>
+        <div class="top-left-panel">
+            <div class="player-card">
+                <img id="avatarJuego" class="avatar-juego" alt="Avatar jugador">
+                <div class="player-info">
+                    <div id="nombreJuego" class="nombre-juego">Jugador</div>
+                    <div id="puntaje" class="puntaje top-left-puntaje">⭐ Puntos: 0</div>
+                    <div id="puntajeAcumulado" class="player-subscore">Total acumulado: 0</div>
+                </div>
             </div>
         </div>
 
-        <p>Haz clic en los números del 1 al 10 en orden correcto</p>
+        <div class="cabecera-juego">
+            <h1>🚀 Carrera de Números Gigantes 🚀</h1>
+
+            <p class="intro" id="textoAnimado">
+                <span class="palabra">Elige</span>
+                <span class="palabra">tus</span>
+                <span class="palabra">números</span>
+                <span class="palabra">y</span>
+                <span class="palabra">lánzalos</span>
+                <span class="palabra">para</span>
+                <span class="palabra">ordenarlos</span>
+                <span class="palabra">de</span>
+                <span class="palabra mayor">MAYOR</span>
+                <span class="palabra">a</span>
+                <span class="palabra menor">MENOR</span>.
+            </p>
+
+            <p class="subtitulo">
+                Desliza cada tarjeta y encaja el orden correcto.
+            </p>
+
+            <h3 class="instruccion">
+                👇 Estos números están desordenados 👇
+            </h3>
+        </div>
 
         <div id="numeros" class="numeros"></div>
 
-        <h2 id="mensaje"></h2>
+        <button class="boton-verificar" onclick="verificarOrden()">
+            🎯 ¡Comprobar!
+        </button>
 
-        <button onclick="siguiente()">Siguiente</button>
+        <h2 id="mensaje" class="mensaje"></h2>
 
     </div>
 
+    <div id="confetti-container" class="confetti-container"></div>
+
+    <!-- IMPORTANTE -->
     <script src="js/juego.js"></script>
 
 </body>

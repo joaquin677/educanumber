@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ordena los Números</title>
-
-<link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria de Números</title>
+    <link rel="stylesheet" href="css/juego2.css">
+    <link rel="icon" href="img/icono.png" type="image/png">
 </head>
 <body>
+    <div class="page-bg"></div>
+    <div id="confetti-container" class="confetti-container"></div>
 
-<div class="contenedor">
-    <h1>🎮 Ordena los Números</h1>
+    <div class="game-shell">
+        <div class="player-panel">
+            <div class="player-card">
+                <div class="player-avatar">👤</div>
+                <div class="player-info">
+                    <div id="nombreJugador" class="player-name">Jugador</div>
+                    <div id="puntajeJuego2" class="player-score">⭐ Puntos Juego 2: 0</div>
+                    <div id="puntajeJuego1" class="player-subscore">Puntos Juego 1: 0</div>
+                    <div id="puntajeTotal" class="player-subscore">Total acumulado: 0</div>
+                </div>
+            </div>
+        </div>
+        <header class="game-header">
+            <div class="title-pill">
+                <span class="icono">🔍</span>
+                <h1>Encuentra las parejas</h1>
+            </div>
+            <p class="descripcion" id="textoAnimado">
+                <span class="palabra">Toca</span>
+                <span class="palabra">una</span>
+                <span class="palabra">carta</span>
+                <span class="palabra">para</span>
+                <span class="palabra">descubrir</span>
+                <span class="palabra">el</span>
+                <span class="palabra">número</span>
+                <span class="palabra">y</span>
+                <span class="palabra">memoriza</span>
+                <span class="palabra">dónde</span>
+                <span class="palabra">está</span>
+                <span class="palabra">para</span>
+                <span class="palabra">encontrar</span>
+                <span class="palabra">su</span>
+                <span class="palabra pareja">pareja</span>.
+            </p>
+            <div class="stats-bar">
+                <div class="stat">Movimientos: <span id="movimientos">0</span></div>
+                <div class="stat">Parejas: <span id="parejas">0</span>/6</div>
+            </div>
+        </header>
 
-    <p>
-    Ordena los números de menor a mayor.
-    </p>
+        <div id="game" class="tablero"></div>
 
-    <div id="numeros"></div>
+        <div class="result-row">
+            <p id="mensaje" class="mensaje">Encuentra todas las parejas ocultas.</p>
+            <button id="reiniciar" class="boton-reiniciar">🔄 Reiniciar</button>
+        </div>
+    </div>
 
-    <button id="verificar">✅ Verificar</button>
-    <button id="reiniciar">🔄 Mezclar</button>
-
-    <h2 id="mensaje"></h2>
-</div>
-
-<script src="js/juego2.js"></script>
+    <script src="js/juego2.js"></script>
 </body>
 </html>
