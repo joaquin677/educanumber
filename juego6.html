@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="css/juego6.css">
 </head>
 <body>
+    <div class="player-panel">
+        <div class="player-card">
+            <div class="player-avatar">
+                <img id="avatarJuego6" class="avatar-img" alt="Avatar jugador" src="img/avatar1.png">
+            </div>
+            <div class="player-info">
+                <div id="nombreJugadorPerfil" class="player-name">Jugador</div>
+                <div id="puntajeTotalPerfil" class="player-subscore">Total acumulado: 0</div>
+                <div id="puntajeJuego6Perfil" class="player-subscore">Juego 6: 0</div>
+            </div>
+        </div>
+    </div>
     <main class="app">
         <header class="cabecera">
             <h1>🎯 Misión Números 10.000</h1>
@@ -17,15 +29,18 @@
 
         <section class="panel-pregunta">
             <div class="pregunta" id="pregunta"></div>
-            <div class="ronda" id="ronda">Ronda 1</div>
+            <div class="ronda" id="ronda">Ronda 1/3</div>
         </section>
 
+        <div class="estado-juego">
+            <div class="seleccionados">Seleccionados: <span id="seleccionadasCount">0</span></div>
+        </div>
 
         <section id="tarjetas" class="tarjetas"></section>
 
-
         <section class="controles">
-            <button id="btnRevisar">Comprobar</button>
+            <button id="btnRevisar" disabled>Comprobar</button>
+            <button id="btnReiniciar" class="btn-secundario">Reiniciar</button>
             <a href="puntuacion.html" class="btn-puntuacion" id="btnPuntuaciones" style="display:none;">📊 Ver Puntuaciones</a>
         </section>
 
@@ -36,5 +51,6 @@
     <script src="js/juego6.js"></script>
 </body>
 </html>
+
 
 
